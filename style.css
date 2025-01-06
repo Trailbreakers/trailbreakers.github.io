@@ -8,7 +8,7 @@
 .header{
 	widows: 100%;
 	height: 100vh;
-	background:	#000942; 
+	background:	#1b2240; 
 	padding-left: 11%;
 	padding-right: 8%;	
 	position: relative;
@@ -35,10 +35,10 @@
 .top-nav ul li a{
 	text-decoration: none;
 	color: #FFFFFF;
-	font-size: 15px;
+	font-size: 35px;
 }
 .top-nav button{
-	background: #e91e63;
+	background: #a68428;
 	color: #fff;
 	border: 0;
 	outline: 0;
