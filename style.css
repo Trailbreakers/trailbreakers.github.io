@@ -128,51 +128,45 @@ body {
 	position: relative;
 }
 
-/* Mobile-Specific Styles */
-@media (max-width: 768px) {
-	.header {
-		height: auto;
-		padding-left: 5%;
-		padding-right: 5%;
-		background-size: 50%; 
-		background-position: center;
-	}
+@media (max-width:768px){
 
-	.top-nav {
-		flex-direction: column;
-		align-items: flex-start;
-		padding-right: 0; 
-	}
-
-	.top-nav ul {
-		display: flex;
-		flex-wrap: wrap; 
-		gap: 10px;
-	}
-
-	.top-nav ul li {
-		margin-right: 20px;
-	}
-
-	.side-nav {
-		width: 80px;
-		padding: 20px 0; 
-	}
-
-	.side-nav .logo {
-		width: 50px; 
-	}
-
-	.text-box h1 {
-		font-size: 48px;
-		line-height: 1.2;
-		max-width: 90%;
-	}
-
-	.text-box .icon {
-		width: 50px;
-		height: 50px;
-	}
+ /* Header */
+ .header{
+  transform:translatex(65px) translatey(35px);
+  min-height:1962px;
+  background-size:auto;
+  background-position-x:87%;
+  background-position-y:99%;
+  left:12px;
+ }
+ 
+ /* Text box */
+ .header .text-box{
+  transform:translatex(0px) translatey(651px);
+ }
+ 
+ /* Top nav */
+ .header .top-nav{
+  transform:translatex(-28px) translatey(-31px);
+  position:relative;
+ }
+ 
+ /* Link */
+ .header .top-nav a{
+  transform:translatex(443px) translatey(-54px);
+ }
+ 
+ /* Heading */
+ .header .text-box h1{
+  transform:translatex(-12px) translatey(-739px);
+  position:relative;
+ }
+ 
+ /* List */
+ .header .top-nav ul{
+  transform:translatex(10px) translatey(6px);
+ }
+ 
 }
 
 /* Very Small Screens (e.g., phones) */
