@@ -29,8 +29,8 @@
 	list-style: none;
 	display: inline-block;
 	margin-right: 30px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .top-nav ul li a{
 	text-decoration: none;
@@ -80,7 +80,7 @@
 .side-nav a{
 	text-decoration: none;
 	color: #fff;
-	transition: rotate(-90deg) transalateX(50%);
+	transition: rotate(-90deg) translateX(50%);
 	width: max-content;
 }
 .text-box{
