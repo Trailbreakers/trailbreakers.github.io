@@ -97,6 +97,7 @@
 	line-height: 95px;
 	margin-top: 10px;
 	margin-bottom: 30px;
+	background: rbga(31, 31, 40, 0);
 }
 
 .text-box .icon {

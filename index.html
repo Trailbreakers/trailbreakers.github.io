@@ -8,13 +8,13 @@
 <body>
     <div class="header">
         <div class="top-nav">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">NOT HOME</a></li>
-                    <li><a href="#">WHERE</a></li>
-                    <li><a href="#">HOW</a></li>
-                </ul>
-                <button>Don't contact me</button>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="toggleVideo()">HOME</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleVideo()">NOT HOME</a></li>
+                <li><a href="#">WHERE</a></li>
+                <li><a href="#">HOW</a></li>
+            </ul>
+            <button>Don't contact me</button>
         </div>
 
         <div class="side-nav">
@@ -24,10 +24,28 @@
         
         <div class="text-box">
             <h1>Have you ever smelled moth balls before?</h1>
-            <p> How did you get their tiny legs apart?</p>
-            <dic class="icon">
+            <p>How did you get their tiny legs apart?</p>
+            <div class="icon">
                 <img src="images/arrow.png"> 
-            </dic>
+            </div>
+        </div>
+
+        <!-- Video Container (Initially hidden) -->
+        <div class="video-container" style="display:none;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QJJYpsA5tv8?si=fQlkAXn2tn5nfyFP?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
+
+    <script>
+        function toggleVideo() {
+            const videoContainer = document.querySelector('.video-container');
+            // Toggle visibility
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block'; // Show the video
+            } else {
+                videoContainer.style.display = 'none'; // Hide the video
+            }
+        }
+    </script>
 </body>
 </html>
