@@ -89,7 +89,7 @@
 
     function triggerAnimation() {
         // Select the elements you want to animate (excluding .side-nav)
-        const elements = document.querySelector('.header, .top-nav, .text-box');
+        const elements = document.querySelectorAll('.header:not(.side-nav), .top-nav:not(.side-nav), .text-box:not(.side-nav)');
 
         // Add the 'fly-up' class to make elements fly up
         elements.forEach(element => {
