@@ -58,7 +58,7 @@
 	align-items: center;
 	flex-direction: column;
 	padding: 50px 0;
-	background: linear-gradient(#7c5900, #a1aace, #e0b7ba, #7c5900);
+	background: linear-gradient(#325e79, #a1aace, #324b4a #325e79);
 	background-size: 100% 500%;
 	background-position: 0 40%;
 }
