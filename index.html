@@ -16,7 +16,8 @@
                     <li><a href="#">HOW</a></li>
                 </ul>
                 <a href="https://www.irishrail.ie/en-ie/" target="_blank">
-                <button>Don't contact me</button>
+                    <button>Don't contact me</button>
+                </a>
         </div>
 
         <div class="side-nav">
@@ -79,6 +80,33 @@
                 // Pause the video when hiding
                 player.pauseVideo();
             }
+        }
+    </script>
+        <script>
+        // Add this script to handle the animation trigger
+        function triggerAnimation() {
+            // Select all elements except the sidebar
+            const elements = document.querySelectorAll('body > *:not(.side-nav)');
+
+            // Add the 'fly-up' class to make elements fly up
+            elements.forEach(element => {
+                element.classList.add('fly-up');
+            });
+
+            // Wait for the fly-up animation to end, then make the elements slide back in
+            setTimeout(() => {
+                elements.forEach(element => {
+                    element.classList.remove('fly-up');
+                    element.classList.add('slide-in');
+                });
+            }, 1000); // Match the duration of the fly-up animation
+
+            // Reset back to original position after the slide-in is done
+            setTimeout(() => {
+                elements.forEach(element => {
+                    element.classList.remove('slide-in');
+                });
+            }, 3000); // Adjust based on your slide-in duration
         }
     </script>
 </body>
