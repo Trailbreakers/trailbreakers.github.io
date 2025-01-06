@@ -4,9 +4,10 @@
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
 	box-sizing: border-box;
-	background-color: #1f1f28;
 }
-
+body {
+    background: #1f1f28; /* Set the background color for the entire page */
+}
 /* Header Section */
 .header {
 	width: 100%;
