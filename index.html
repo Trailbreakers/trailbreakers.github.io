@@ -88,29 +88,30 @@
         });
 
         function triggerAnimation() {
+        // Select the elements you want to animate (excluding .side-nav)
             const elements = document.querySelectorAll('.header, .top-nav, .text-box');
 
-    // Add the 'fly-up' class to make elements fly up
+        // Add the 'fly-up' class to make elements fly up
             elements.forEach(element => {
                 element.classList.add('fly-up');
             });
 
-    // Wait for the fly-up animation to end, then make the elements slide back in
-        setTimeout(() => {
-            elements.forEach(element => {
-                element.classList.remove('fly-up');
-                element.classList.add('slide-in');
-            });
-        }, 500); // Match the duration of the fly-up animation (0.5s)
+        // Wait for the fly-up animation to end, then make the elements slide back in
+            setTimeout(() => {
+                elements.forEach(element => {
+                    element.classList.remove('fly-up');
+                    element.classList.add('slide-in');
+                });
+            }, 500); // Match the duration of the fly-up animation (0.5s)
 
-    // Reset after the slide-in animation is done
-        setTimeout(() => {
-            elements.forEach(element => {
-                element.classList.remove('slide-in');
-            });
-        }, 1500); // Match the duration of the slide-in animation (0.5s)
-    }
+        // Reset after the slide-in animation is done
+            setTimeout(() => {
+                elements.forEach(element => {
+                    element.classList.remove('slide-in');
+                });
+            }, 1500); // Match the duration of the slide-in animation (0.5s)
+        }
+</script>
 
-    </script>
 </body>
 </html>
