@@ -85,33 +85,33 @@
     <script>
         document.querySelector('.icon').addEventListener('click', function() {
             triggerAnimation();
-    });
+        });
 
+        // Function to trigger the animation
         function triggerAnimation() {
-    // Select all elements you want to animate, except the sidebar
-            const elements = document.querySelectorAll('.header, .top-nav, .text-box');
+            // Select all elements except the sidebar
+            const elements = document.querySelectorAll('body > *:not(.side-nav)');
 
-    // Add the 'fly-up' class to make elements fly up
+            // Add the 'fly-up' class to make elements fly up
             elements.forEach(element => {
                 element.classList.add('fly-up');
             });
 
-    // Wait for the fly-up animation to end, then make the elements slide back in
-        setTimeout(() => {
-            elements.forEach(element => {
-                element.classList.remove('fly-up');
-                element.classList.add('slide-in');
-            });
-        }, 1000); // Match the duration of the fly-up animation
+            // Wait for the fly-up animation to end, then make the elements slide back in
+            setTimeout(() => {
+                elements.forEach(element => {
+                    element.classList.remove('fly-up');
+                    element.classList.add('slide-in');
+                });
+            }, 500; // Match the duration of the fly-up animation
 
-    // Reset back to original position after the slide-in is done
-        setTimeout(() => {
-            elements.forEach(element => {
-                element.classList.remove('slide-in');
-            });
-        }, 3000); // Adjust based on your slide-in duration
-    }
-
+            // Reset back to original position after the slide-in is done
+            setTimeout(() => {
+                elements.forEach(element => {
+                    element.classList.remove('slide-in');
+                });
+            }, 1500); // Adjust based on your slide-in duration
+        }
     </script>
 </body>
 </html>

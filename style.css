@@ -71,6 +71,7 @@ body {
 	background: linear-gradient(#d19f9e, #324b4a, #325e79, #d19f9e);
 	background-size: 100% 500%;
 	background-position: 0 40%;
+	z-index:10;
 }
 
 .side-nav .logo {
@@ -207,7 +208,7 @@ body {
 }
 /* Animation Styles */
 .fly-up {
-    animation: flyUp 1s forwards; /* Fly up the screen */
+    animation: flyUp 0.5s forwards; /* Fly up the screen */
 }
 
 @keyframes flyUp {
@@ -220,7 +221,7 @@ body {
 }
 
 .slide-in {
-    animation: slideIn 1.5s forwards; /* Slide back in */
+    animation: slideIn 1s forwards; /* Slide back in */
 }
 
 @keyframes slideIn {
@@ -230,4 +231,7 @@ body {
     100% {
         transform: translateY(0); /* End at normal position */
     }
+}
+.header, .top-nav, .text-box {
+    z-index: 5; /* Lower z-index so these elements go behind the sidebar */
 }
