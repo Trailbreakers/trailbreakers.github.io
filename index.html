@@ -19,12 +19,6 @@
                     <button>Don't contact me</button>
                 </a>
         </div>
-
-        <div class="side-nav">
-            <img src="images/logo.png" class="logo">
-            <a href="#">AMAZING</a>
-        </div>
-
         <div class="text-box">
             <h1>Have you ever smelled moth balls before?</h1>
             <p> How did you get their tiny legs apart?</p>
@@ -33,7 +27,10 @@
             </div>
         </div>
     </div>
-
+        <div class="side-nav">
+            <img src="images/logo.png" class="logo">
+            <a href="#">AMAZING</a>
+        </div>
     <!-- Video container -->
     <div class="video-container" style="display:none;">
         <div id="player"></div>
@@ -88,8 +85,7 @@
     });
 
     function triggerAnimation() {
-        // Select the elements you want to animate (excluding .side-nav)
-        const elements = document.querySelectorAll('.header:not(.side-nav), .top-nav:not(.side-nav), .text-box:not(.side-nav)');
+        const elements = document.querySelectorAll('.header');
 
         // Add the 'fly-up' class to make elements fly up
         elements.forEach(element => {
