@@ -130,41 +130,46 @@ body {
 
 @media (max-width:768px){
 
- /* Header */
- .header{
-  transform:translatex(65px) translatey(35px);
-  min-height:1962px;
-  background-size:auto;
-  background-position-x:87%;
-  background-position-y:99%;
-  left:12px;
+ /* Heading */
+ .header .text-box h1{
+  transform:translatex(-6px) translatey(-17px);
  }
  
  /* Text box */
  .header .text-box{
-  transform:translatex(0px) translatey(651px);
+  transform:translatex(-43px) translatey(-28px);
  }
  
  /* Top nav */
  .header .top-nav{
-  transform:translatex(-28px) translatey(-31px);
-  position:relative;
- }
- 
- /* Link */
- .header .top-nav a{
-  transform:translatex(443px) translatey(-54px);
- }
- 
- /* Heading */
- .header .text-box h1{
-  transform:translatex(-12px) translatey(-739px);
-  position:relative;
+  transform:translatex(-48px) translatey(-24px);
  }
  
  /* List */
  .header .top-nav ul{
-  transform:translatex(10px) translatey(6px);
+  width:614px !important;
+ }
+ 
+ /* Button */
+ .top-nav a button{
+  transform: translatex(-319px) translatey(44px);
+  position:relative;
+  left:-107px;
+  top:4px;
+ }
+ 
+ /* Header */
+ .header{
+  background-position-y:59%;
+  padding-bottom:555px;
+ }
+ 
+ /* Body */
+ body{
+  height:1449px;
+  max-height:0px;
+  min-height:0px;
+  max-width:753px;
  }
  
 }
