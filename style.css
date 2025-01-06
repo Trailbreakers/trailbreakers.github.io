@@ -72,6 +72,8 @@ body {
 	background-size: 100% 500%;
 	background-position: 0 40%;
 	z-index:15;
+	adnimation: none;
+	transition: none;
 }
 
 .side-nav .logo {
