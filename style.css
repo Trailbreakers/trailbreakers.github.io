@@ -83,7 +83,17 @@ body {
 	transform: rotate(-90deg) translateX(50%);
 	width: max-content;
 }
-
+.side-nav:hover{
+	animation: backcolor 20s linear infinite reverse;
+}
+@keyframes backcolor {
+	0%{
+		background-position: 0 0%;
+	}
+	100%{
+		background-position: 0 400%;
+	}
+}
 /* Text Box */
 .text-box {
 	margin-top: 20%;
