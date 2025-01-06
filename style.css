@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 body {
-    background: #1f1f28; /* Set the background color for the entire page */
+    background: #1f1f28; 
 }
 /* Header Section */
 .header {
@@ -122,27 +122,29 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-top: 20px;
+	z-index: 10; /* Ensure the icon is on top */
+	position: relative;
 }
 
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
 	.header {
-		height: auto; /* Allow content to dictate height */
+		height: auto;
 		padding-left: 5%;
 		padding-right: 5%;
-		background-size: 50%; /* Adjust image size */
+		background-size: 50%; 
 		background-position: center;
 	}
 
 	.top-nav {
 		flex-direction: column;
 		align-items: flex-start;
-		padding-right: 0; /* Adjust padding */
+		padding-right: 0; 
 	}
 
 	.top-nav ul {
 		display: flex;
-		flex-wrap: wrap; /* Wrap items on smaller screens */
+		flex-wrap: wrap; 
 		gap: 10px;
 	}
 
@@ -152,11 +154,11 @@ body {
 
 	.side-nav {
 		width: 80px;
-		padding: 20px 0; /* Reduced padding */
+		padding: 20px 0; 
 	}
 
 	.side-nav .logo {
-		width: 50px; /* Slightly smaller logo */
+		width: 50px; 
 	}
 
 	.text-box h1 {
@@ -195,7 +197,7 @@ body {
     width: calc(100% - 100px); /* Fill the remaining width, minus the sidebar */
     height: calc(100vh - 80px); /* Fill the remaining height, minus the top nav */
     z-index: 10; /* Ensure it's above other elements */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: none; /* Initially hidden */
 }
 

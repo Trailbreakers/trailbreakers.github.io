@@ -82,8 +82,13 @@
             }
         }
     </script>
-        <script>
-        // Add this script to handle the animation trigger
+    <script>
+        // Ensure the icon is clickable and trigger animation when clicked
+        document.querySelector('.icon').addEventListener('click', function() {
+            triggerAnimation();
+        });
+
+        // Function to trigger the animation
         function triggerAnimation() {
             // Select all elements except the sidebar
             const elements = document.querySelectorAll('body > *:not(.side-nav)');
